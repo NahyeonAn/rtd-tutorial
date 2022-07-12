@@ -5,7 +5,7 @@ simsep - Python library for PSA simulation.
 __version__ = "0.1.0"
 
 
-# %% Import packages
+# Import packages
 import numpy as np
 #from numpy.lib.function_base import _parse_input_dimensions
 from scipy.integrate import odeint
@@ -14,10 +14,10 @@ import time
 from scipy.interpolate import interp1d
 from scipy.integrate import solve_ivp
  
-# %% Global varaiebls
+# Global varaiebls
 R_gas = 8.3145      # 8.3145 J/mol/K
  
-# %% column (bed) class
+# column (bed) class
 def Ergun(C_array,T_array, M_molar, mu_vis, D_particle,epsi_void,d,dd,d_fo, N):
     rho_g = np.zeros(N)
     for c, m in zip(C_array, M_molar):
